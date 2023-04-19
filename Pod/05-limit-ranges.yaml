@@ -1,0 +1,28 @@
+---
+apiVersion: v1
+kind: limitRange
+metadata:
+ name: cpu-resource-constraint
+spec:
+ limits:
+ - default: # this section defines default limits
+    cpu: 500m
+   defaultRequest: # this section defines default requests.
+    cpu: 500m
+   max: # max and min default range
+    cpu: "1"
+   min:
+    cpu: 100m
+   type: Container
+   ---
+   apiVersion: v1
+kind: Pod
+metadata:
+ name: stress
+spec:
+ containers:
+ - image: chakradhar933/stress
+   imagePullPolicy: Always
+   name: stress
+   command: ["sleep","200"]
+
