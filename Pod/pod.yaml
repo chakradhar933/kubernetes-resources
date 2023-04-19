@@ -5,7 +5,7 @@ metadata:
   namespace: roboshop
 spec:
   containers:
-    - name: nginx:1.14.2
-      image: nginx
+    - image: nginx:1.14.2
+      name: nginx
       ports:
       - containerPort: 80 
