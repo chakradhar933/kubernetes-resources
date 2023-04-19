@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
   -image: nginx
-    name: nginx
+   name: nginx
   -image: almalinux
-    name: sidecar
-    command: ["sleep","200"]      
+   name: sidecar
+   command: ["sleep","200"]      
