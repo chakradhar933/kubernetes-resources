@@ -5,7 +5,7 @@ metadata:
   Namespace: roboshop
 spec:
   containers:
-    - name: nginx
+    - name: nginx:1.14.2
       image: nginx
       ports:
       - containerPort: 80 
