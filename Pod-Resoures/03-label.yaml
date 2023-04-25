@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: label-pod
+  labels:
+    course: k8s
+    duration: 25hrs
+    trainer: chakri
+  annotations:
+    org.docker.kubernetes.image.maintainer: chakri
+spec:
+  conatiners:
+  - name: nginx
+    image: nginx 
+         
