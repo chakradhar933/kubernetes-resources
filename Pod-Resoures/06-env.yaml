@@ -5,11 +5,11 @@ metadata:
 spec:
   containers:
   - name: nginx
-    image: image
+    image: nginx
     env:
     - name: course
       value: k8s
     - name: trainer
       value: chakri
-      
+
 
