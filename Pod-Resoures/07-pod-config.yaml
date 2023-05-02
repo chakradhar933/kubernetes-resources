@@ -15,5 +15,5 @@ spec:
    - name: duration
      valueFrom:
       configMapKeyRef:
-      name: course-config
-      key: duration     
+       name: course-config
+       key: duration     
