@@ -17,7 +17,7 @@ kind: Service
 metadata:
   name: nginx-service
 spec:
-  type: Loadbalancer
+  type: LoadBalancer
   selector:
     server: nginx
   ports:
