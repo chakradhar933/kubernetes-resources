@@ -3,10 +3,10 @@ kind: Pod
 metadata:
   name: nginx
   labels:
-    env: test
+    env: dev
 spec:
   containers:
   - name: nginx
     image: nginx
   nodeSelector:
-    tier: web
+    tier: app
